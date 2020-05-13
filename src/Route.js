@@ -15,9 +15,9 @@ export default new Vue({
         routes: [
             {path: "", component: HelloWorld, name: "Home"},
             {
-                path: "/About", name: "Test", component: About, children: [
+                path: "/About", alias: "/MyInfo", name: "Test", component: About, children: [
                     {
-                        path: "Us", components: {
+                        path: "Us", alias: "MyUs", components: {
                             default: AboutUs,
                             Test2: Test2,
                         }
@@ -27,8 +27,6 @@ export default new Vue({
             },
             {path: "/Detail/:id?", component: Detail, name: "Item"},
             {path: "*", redirect: "/About"},
-            // {path: "*", redirect: {name: "Home"}},
-            // {path: "*", redirect: ()=>"/About"}
         ]
     }),
     render: h => h(App),
