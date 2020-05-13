@@ -18,16 +18,11 @@ export default new Vue({
                 path: "/About", name: "Test", component: About, children: [
                     {
                         path: "Us", components: {
-                            Test1: AboutUs,
+                            default: AboutUs,
                             Test2: Test2,
                         }
                     },
-                    {
-                        path: "You", components: {
-                            Test1: AboutYou,
-                            Test2: Test2,
-                        }
-                    },
+                    {path: "You", component: AboutYou},
                 ]
             },
             {path: "/Detail/:id?", component: Detail, name: "Item"},

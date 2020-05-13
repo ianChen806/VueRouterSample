@@ -10,7 +10,8 @@
 			</div>
 		</div>
 		<hr>
-		<router-view name="Test1"></router-view>
+<!--		<router-view ></router-view>-->
+		<router-view name="default"></router-view>
 		<router-view name="Test2"></router-view>
 	</div>
 </template>
