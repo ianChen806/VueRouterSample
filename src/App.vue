@@ -6,7 +6,7 @@
 			<router-link to="/">HelloWorld</router-link>
 		</div>
 		<div>
-			<router-link to="/About">About</router-link>
+			<router-link :to="{name:'Test'}">About</router-link>
 		</div>
 		<div>
 			<router-link to="/Detail">Detail</router-link>

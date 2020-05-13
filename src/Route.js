@@ -14,7 +14,7 @@ export default new Vue({
         routes: [
             {path: "", component: HelloWorld},
             {
-                path: "/About", component: About, children: [
+                path: "/About", name: "Test", component: About, children: [
                     {path: "Us", component: AboutUs},
                     {path: "You", component: AboutYou},
                 ]
