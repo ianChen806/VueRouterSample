@@ -8,11 +8,7 @@
 <script>
     export default {
         name: "Detail",
-        computed: {
-            id() {
-                return this.$route.params.id;
-            }
-        }
+        props: ["id"],
     }
 </script>
 

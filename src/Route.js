@@ -25,7 +25,12 @@ export default new Vue({
                     {path: "You", component: AboutYou},
                 ]
             },
-            {path: "/Detail/:id?", component: Detail, name: "Item"},
+            {
+                path: "/Detail/:id?",
+                component: Detail,
+                name: "Item",
+                props: true
+            },
             {path: "*", redirect: "/About"},
         ]
     }),
