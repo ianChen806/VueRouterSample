@@ -6,10 +6,10 @@
 			<router-link to="/">HelloWorld</router-link>
 		</div>
 		<div>
-			<router-link :to="{name:'Test'}">About</router-link>
+			<router-link to="/About">About</router-link>
 		</div>
 		<div>
-			<router-link to="/Detail">Detail</router-link>
+			<router-link :to="{name:'Item',params:{id:123}}">Detail</router-link>
 		</div>
 		<hr>
 		<router-view></router-view>

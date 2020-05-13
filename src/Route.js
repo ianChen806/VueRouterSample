@@ -19,7 +19,7 @@ export default new Vue({
                     {path: "You", component: AboutYou},
                 ]
             },
-            {path: "/Detail/:id?", component: Detail},
+            {path: "/Detail/:id?", component: Detail, name: "Item"},
         ]
     }),
     render: h => h(App),
