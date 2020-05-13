@@ -12,6 +12,7 @@ Vue.use(VueRouter);
 
 export default new Vue({
     router: new VueRouter({
+        mode: "history",
         routes: [
             {path: "", component: HelloWorld, name: "Home"},
             {
