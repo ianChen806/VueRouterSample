@@ -29,7 +29,11 @@ export default new Vue({
                 path: "/Detail/:id?",
                 component: Detail,
                 name: "Item",
-                props: {id: 11234}
+                props: (route) => {
+                    return {
+                        id: route.params.id
+                    }
+                }
             },
             {path: "*", redirect: "/About"},
         ]
