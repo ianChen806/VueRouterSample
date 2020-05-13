@@ -13,7 +13,7 @@ Vue.use(VueRouter);
 export default new Vue({
     router: new VueRouter({
         routes: [
-            {path: "", component: HelloWorld},
+            {path: "", component: HelloWorld, name: "Home"},
             {
                 path: "/About", name: "Test", component: About, children: [
                     {
@@ -26,6 +26,7 @@ export default new Vue({
                 ]
             },
             {path: "/Detail/:id?", component: Detail, name: "Item"},
+            {path: "*", redirect: {name: "Home"}}
         ]
     }),
     render: h => h(App),
