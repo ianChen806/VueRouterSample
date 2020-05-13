@@ -26,7 +26,9 @@ export default new Vue({
                 ]
             },
             {path: "/Detail/:id?", component: Detail, name: "Item"},
-            {path: "*", redirect: {name: "Home"}}
+            {path: "*", redirect: "/About"},
+            // {path: "*", redirect: {name: "Home"}},
+            // {path: "*", redirect: ()=>"/About"}
         ]
     }),
     render: h => h(App),
