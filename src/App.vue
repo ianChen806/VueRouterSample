@@ -8,6 +8,9 @@
 		<div>
 			<router-link to="/About">About</router-link>
 		</div>
+		<div>
+			<router-link to="/Detail">Detail</router-link>
+		</div>
 		<hr>
 		<router-view></router-view>
 	</div>
