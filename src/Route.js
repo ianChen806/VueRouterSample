@@ -31,7 +31,7 @@ export default new Vue({
                 name: "Item",
                 props: (route) => {
                     return {
-                        id: route.params.id
+                        id: route.query.id
                     }
                 }
             },
