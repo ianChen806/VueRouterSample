@@ -9,7 +9,7 @@
 			<router-link to="/About">About</router-link>
 		</div>
 		<div>
-			<router-link to="/Detail/123">Detail</router-link>
+			<router-link to="/Detail">Detail</router-link>
 		</div>
 		<hr>
 		<router-view></router-view>
@@ -23,5 +23,5 @@
 </script>
 
 <style>
-	
+
 </style>

@@ -13,7 +13,7 @@ new Vue({
         routes: [
             {path: "", component: HelloWorld},
             {path: "/About", component: About},
-            {path: "/Detail/:id", component: Detail},
+            {path: "/Detail/:id?", component: Detail},
         ]
     }),
     render: h => h(App),
