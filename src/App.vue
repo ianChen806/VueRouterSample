@@ -9,7 +9,7 @@
 			<router-link to="/About">About</router-link>
 		</div>
 		<div>
-			<router-link to="/Detail">Detail</router-link>
+			<router-link to="/Detail/123">Detail</router-link>
 		</div>
 		<hr>
 		<router-view></router-view>
@@ -23,12 +23,5 @@
 </script>
 
 <style>
-	#app {
-		font-family: Avenir, Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-		margin-top: 60px;
-	}
+	
 </style>
