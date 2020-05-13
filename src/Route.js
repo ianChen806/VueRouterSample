@@ -17,7 +17,7 @@ export default new Vue({
             {
                 path: "/About", alias: "/MyInfo", name: "Test", component: About, children: [
                     {
-                        path: "Us", alias: "MyUs", components: {
+                        path: "Us", alias: ["i", "my", "me", "we"], components: {
                             default: AboutUs,
                             Test2: Test2,
                         }
