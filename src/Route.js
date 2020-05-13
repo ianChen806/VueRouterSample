@@ -6,6 +6,7 @@ import About from "./components/About";
 import Detail from "./components/Detail";
 import AboutUs from "./components/AboutUs";
 import AboutYou from "./components/AboutYou";
+import Test2 from "./components/Test2";
 
 Vue.use(VueRouter);
 
@@ -15,8 +16,18 @@ export default new Vue({
             {path: "", component: HelloWorld},
             {
                 path: "/About", name: "Test", component: About, children: [
-                    {path: "Us", component: AboutUs},
-                    {path: "You", component: AboutYou},
+                    {
+                        path: "Us", components: {
+                            Test1: AboutUs,
+                            Test2: Test2,
+                        }
+                    },
+                    {
+                        path: "You", components: {
+                            Test1: AboutYou,
+                            Test2: Test2,
+                        }
+                    },
                 ]
             },
             {path: "/Detail/:id?", component: Detail, name: "Item"},
