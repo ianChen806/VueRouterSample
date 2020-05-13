@@ -3,7 +3,7 @@
 		<div>App</div>
 		<hr>
 		<div>
-			<router-link to="/">Home</router-link>
+			<router-link to="/">HelloWorld</router-link>
 		</div>
 		<div>
 			<router-link to="/About">About</router-link>
